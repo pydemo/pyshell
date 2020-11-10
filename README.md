@@ -2,6 +2,21 @@
 lambdash using Python
 
 inspired by https://github.com/alestic/lambdash (only local and lambda are in Python)
+
+## Shell bootstrap layer (https://s3.amazonaws.com/cloudacademylabs-customruntimelab-1nqi07u9duqck/bash-lambda-layer/layer.zip)
+
+python3 pyshell ldd /opt/bin/git
+```
+        linux-vdso.so.1 =>  (0x00007ffd076e0000)
+        libz.so.1 => /lib64/libz.so.1 (0x00007fcfefcf2000)
+        libpthread.so.0 => /lib64/libpthread.so.0 (0x00007fcfefad6000)
+        librt.so.1 => /lib64/librt.so.1 (0x00007fcfef8ce000)
+        libc.so.6 => /lib64/libc.so.6 (0x00007fcfef500000)
+        /lib64/ld-linux-x86-64.so.2 (0x00007fcfeff08000)
+```
+
+
+
 ## Number of processors
 time python3 pyshell nproc
 ```
