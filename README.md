@@ -16,6 +16,27 @@ python3 pyshell ldd /opt/bin/git
         /lib64/ld-linux-x86-64.so.2 (0x00007fcfeff08000)
 ```
 
+## AWS Lambda Libc version
+python3 pyshell /lib64/libc.so.6 --version
+```
+GNU C Library (GNU libc) stable release version 2.17, by Roland McGrath et al.
+Copyright (C) 2012 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.
+There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE.
+Compiled by GNU CC version 4.8.5 20150623 (Red Hat 4.8.5-28).
+Compiled on a Linux 3.2.5 system on 2020-02-11.
+Available extensions:
+        The C stubs add-on version 2.1.2.
+        crypt add-on version 2.1 by Michael Glad and others
+        GNU Libidn by Simon Josefsson
+        Native POSIX Threads Library by Ulrich Drepper et al
+        BIND-8.2.3-T5B
+        RT using linux kernel aio
+libc ABIs: UNIQUE IFUNC
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/libc/bugs.html>.
+```
 
 
 ## Number of processors
