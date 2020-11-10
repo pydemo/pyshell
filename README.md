@@ -2,6 +2,19 @@
 lambdash using Python
 
 inspired by https://github.com/alestic/lambdash (only local and lambda are in Python)
+## Number of processors
+time python3 pyshell nproc
+```
+2
+```
+## Top running processes
+python3 pyshell ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head
+```
+PID  PPID CMD                         %MEM %CPU
+    1     0 /var/rapid/init --enable-ex  3.4  0.0
+    7     1 /var/lang/bin/python3.7 /va  9.1  0.0
+   30     7 ps -eo pid,ppid,cmd,%mem,%c  1.1  0.0
+```
 
 ## Lambda Linux realease (cat /etc/os-release)
 python3 pyshell cat /etc/os-release
