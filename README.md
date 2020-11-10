@@ -2,7 +2,7 @@
 lambdash using Python
 
 
-inspired by https://github.com/alestic/lambdash (only in Python)
+inspired by https://github.com/alestic/lambdash (only local and lambda are in Python)
 
 ##  ls -all /
 
