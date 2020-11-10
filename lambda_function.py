@@ -1,5 +1,7 @@
 import json
 import subprocess
+from subprocess import Popen, PIPE
+
 from pprint import pprint as pp
 def lambda_handler(evt, context):
     # TODO implement
@@ -7,12 +9,15 @@ def lambda_handler(evt, context):
     
     cmd=[evt['command']]
     #pp(cmd)
-    response = subprocess.check_output(cmd, shell=True, stderr=subprocess.STDOUT)
+    p = subprocess.Popen(cmd, stdout=PIPE, stderr=PIPE, shell=True)
+    stdout, stderr = p.communicate()
     #pp(response)
-
+    p.wait()
+  
     return {  
-        'error': [],
-        'stdout': response.decode('utf-8'),
-        'stderr': ''
+        'error': {'code':p.returncode},
+            #'{"code":'+json.dumps(p.returncode)+'}',
+        'stdout': stdout.decode('utf-8'), 
+        'stderr': stderr.decode('utf-8')
         
     }
