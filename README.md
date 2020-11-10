@@ -19,7 +19,15 @@ VARIANT_ID="202010122208-al2018.03.416.0"
 ```
 ## uname -r
 python3 pyshell uname -r
-```4.14.193-110.317.amzn2.x86_64```
+```
+4.14.193-110.317.amzn2.x86_64
+```
+## cat /proc/version
+python3 pyshell cat /proc/version
+```
+Linux version 4.14.193-110.317.amzn2.x86_64 (mockbuild@ip-10-0-1-32) (gcc version 7.3.1 20180712 (Red Hat 7.3.1-9) (GCC)) #1 SMP Fri Sep 11 23:37:26 UTC 2020
+```
+
 
 
 
