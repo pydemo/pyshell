@@ -35,7 +35,7 @@ drwxr-xr-x 24 root         root 4096 Oct 12 22:12 var
 ##  df -h
 
 
-ubuntu@ip-172-31-45-165:~/lambdash$ time python3 pyshell df -h
+ubuntu@ip-172-31-45-165:~/lambdash$ time python3 pylambdash df -h
 ```
 Filesystem      Size  Used Avail Use% Mounted on
 /dev/root       7.8G  6.6G  1.3G  85% /
