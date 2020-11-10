@@ -3,6 +3,23 @@ lambdash using Python
 
 inspired by https://github.com/alestic/lambdash (only local and lambda are in Python)
 
+## Python venv
+python3 pyshell python3 -m venv /tmp/test
+```
+real    0m44.041s
+user    0m0.242s
+sys     0m0.025s
+```
+## Python venv size
+
+python3 pyshell du -csh --block-size=1M /tmp/test
+```
+13      /tmp/test
+13      total
+```
+
+
+
 ## Shell bootstrap layer 
 python3 pyshell ldd /opt/bin/git
 (https://s3.amazonaws.com/cloudacademylabs-customruntimelab-1nqi07u9duqck/bash-lambda-layer/layer.zip)
