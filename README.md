@@ -3,8 +3,8 @@ lambdash using Python
 
 inspired by https://github.com/alestic/lambdash (only local and lambda are in Python)
 
-## Shell bootstrap layer (https://s3.amazonaws.com/cloudacademylabs-customruntimelab-1nqi07u9duqck/bash-lambda-layer/layer.zip)
-
+## Shell bootstrap layer 
+(https://s3.amazonaws.com/cloudacademylabs-customruntimelab-1nqi07u9duqck/bash-lambda-layer/layer.zip)
 python3 pyshell ldd /opt/bin/git
 ```
         linux-vdso.so.1 =>  (0x00007ffd076e0000)
