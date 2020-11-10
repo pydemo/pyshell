@@ -1,8 +1,23 @@
 # python-lambdash
 lambdash using Python
 
-
 inspired by https://github.com/alestic/lambdash (only local and lambda are in Python)
+
+## Linux realease (cat /etc/os-release)
+python3 pyshell cat /etc/os-release
+```
+NAME="Amazon Linux AMI"
+VERSION="2018.03"
+ID="amzn"
+ID_LIKE="rhel fedora"
+VERSION_ID="2018.03"
+PRETTY_NAME="Amazon Linux AMI 2018.03"
+ANSI_COLOR="0;33"
+CPE_NAME="cpe:/o:amazon:linux:2018.03:ga"
+HOME_URL="http://aws.amazon.com/amazon-linux-ami/"
+VARIANT_ID="202010122208-al2018.03.416.0"
+```
+
 
 ##  ls -all /
 
