@@ -5,7 +5,7 @@ lambdash using Python
 inspired by https://github.com/alestic/lambdash (only in Python)
 
 ```
-ubuntu@ip-172-31-45-165:~/lambdash$ time python3 pyshell ls -all /
+ubuntu@ip-172-31-45-165:~/lambdash$ time python3 pylambdash ls -all /
 total 76
 dr-xr-xr-x 21 root         root 4096 Oct 12 22:10 .
 dr-xr-xr-x 21 root         root 4096 Oct 12 22:10 ..
