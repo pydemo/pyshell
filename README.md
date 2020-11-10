@@ -3,7 +3,7 @@ lambdash using Python
 
 inspired by https://github.com/alestic/lambdash (only local and lambda are in Python)
 
-## Linux realease (cat /etc/os-release)
+## Lambda Linux realease (cat /etc/os-release)
 python3 pyshell cat /etc/os-release
 ```
 NAME="Amazon Linux AMI"
@@ -17,6 +17,10 @@ CPE_NAME="cpe:/o:amazon:linux:2018.03:ga"
 HOME_URL="http://aws.amazon.com/amazon-linux-ami/"
 VARIANT_ID="202010122208-al2018.03.416.0"
 ```
+## uname -r
+python3 pyshell uname -r
+```4.14.193-110.317.amzn2.x86_64```
+
 
 
 ##  ls -all /
