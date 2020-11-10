@@ -9,7 +9,7 @@ from pprint import pprint as pp
 client = boto3.client('lambda', region_name='us-east-2')
 response = client.invoke(
     InvocationType='RequestResponse',
-    FunctionName='pyshell',
+    FunctionName='pylambdash',
     Payload='{"command":'+json.dumps(" ".join(sys.argv[1:]))+'}')
 result = json.load(response['Payload'])
 for line in result['stdout'].split(r'\n'):
