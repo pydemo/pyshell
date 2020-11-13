@@ -3,6 +3,44 @@ lambdash using Python
 
 inspired by https://github.com/alestic/lambdash (only local and lambda are in Python)
 
+## env
+python3 pyshell.py env
+```
+AWS_LAMBDA_FUNCTION_VERSION=$LATEST
+AWS_SESSION_TOKEN=IQoJb3JpZ2luX2VjEFwaCXVzLWVhc3QtMiJGMEQCIGqupJNWmbhomsM2ilNOfPrN6CEjwBJgDRVAbkSn1mtEAiBP2ZlDkhylpmsxK2taUB/75+b0pEc9IAVSXm97Lz02XSrPAQjF//////////8BEAAaDDg4NzUyNzE0NjU3NSIMt6FZ5yxxSgFdYgP2KqMBbVi48qd6bS/DdITn118dnaLP4gmyswzWNf4sbQEETN/jebDDKzrJFDDl7d3qdEL3mMqbnFIOMldRfiC51TGYFJ/Zov9pqyG+nOD9We6xob4pohxyIUShKp9E8JOrCDAENhnbPrwvNh6K4Q666fZgZAe2fG2MGt1PmTVr/t7Bsu2pwZFGqp5eIYR46DaykkIEQletoJCIUtY2XISjqTqhDMvjIzD5zrv9BTrhAcXmRSO8T+uDGcswkfumYlmlad1TqnmNG0lC9HLsCAr0k2XkTlrPkGD5P77vtbkOCubzLNiwOrUHD64ohsP8c+rfX3hJk6u9bgj7dDsUmHdbkFP0gBW1WiNB9kVfc6Js/wTQkNoXV6ECSNC4rhIzURPXGipvcdV49uBOu9MjKm6J6aGjqSWJVA+Ewew6SV6Ju4JUJMJHXYhE5R/vWxcTlG68sRHnxRO2VkmYlQ/MLYoyOAfcsQnFq6XB5G36JWQiQOOe9YSwelneyYcAKLxgz5KolVtfMJTkrNDx399laW1Brg==
+LAMBDA_TASK_ROOT=/var/task
+LD_LIBRARY_PATH=/var/lang/lib:/lib64:/usr/lib64:/var/runtime:/var/runtime/lib:/var/task:/var/task/lib:/opt/lib
+AWS_LAMBDA_LOG_GROUP_NAME=/aws/lambda/pyshell
+AWS_LAMBDA_RUNTIME_API=127.0.0.1:9001
+AWS_LAMBDA_LOG_STREAM_NAME=2020/11/13/[$LATEST]0a3947147feb414c882589c8037ffcc5
+AWS_EXECUTION_ENV=AWS_Lambda_python3.7
+AWS_XRAY_DAEMON_ADDRESS=169.254.79.2:2000
+AWS_LAMBDA_FUNCTION_NAME=pyshell
+PATH=/var/lang/bin:/usr/local/bin:/usr/bin/:/bin:/opt/bin
+AWS_DEFAULT_REGION=us-east-2
+PWD=/var/task
+AWS_SECRET_ACCESS_KEY=vFjMR3NKengJXoHl4JgNc5L8s28abgoWGgBllfoh
+LAMBDA_RUNTIME_DIR=/var/runtime
+LANG=en_US.UTF-8
+AWS_REGION=us-east-2
+TZ=:UTC
+AWS_ACCESS_KEY_ID=ASIA45JF5QRHTWVRD2NB
+SHLVL=1
+_AWS_XRAY_DAEMON_ADDRESS=169.254.79.2
+_AWS_XRAY_DAEMON_PORT=2000
+_X_AMZN_TRACE_ID=Root=1-5faee7a0-799d88587267d6e515923c39;Parent=345c2385132090ea;Sampled=0
+AWS_XRAY_CONTEXT_MISSING=LOG_ERROR
+_HANDLER=lambda_function.lambda_handler
+AWS_LAMBDA_FUNCTION_MEMORY_SIZE=128
+_=/usr/bin/env
+```
+
+
+
+
+
+
+
 ## Python venv
 python3 pyshell python3 -m venv /tmp/test
 ```
