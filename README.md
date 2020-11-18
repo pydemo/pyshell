@@ -3,6 +3,17 @@ lambdash using Python
 
 inspired by https://github.com/alestic/lambdash (only local and lambda are in Python)
 
+## python path
+
+time python3 pyshell.py python -c \\"import sys\\;print\\(sys.executable\\)\\"
+```
+/var/lang/bin/python
+
+real    0m0.597s
+user    0m0.131s
+sys     0m0.010s
+```
+
 ## env
 python3 pyshell.py env
 ```
