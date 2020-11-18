@@ -1,0 +1,1 @@
+{"errorType": "AssertionError", "stackTrace": ["  File \"/var/task/lambda_function.py\", line 8, in lambda_handler\n    assert 'command' in evt\n"]}
