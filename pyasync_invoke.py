@@ -43,7 +43,7 @@ def main(**kwargs):
         result = json.load(response['Payload'])
 
     #pp(result)
-    if 'errorMessage' in result: 
+    if 'errorMessage' in result:
         print('#'*80)
         
         error(ex[local],result['errorMessage'])
