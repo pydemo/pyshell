@@ -5,7 +5,7 @@ inspired by https://github.com/alestic/lambdash (only local and lambda are in Py
 
 ## python path
 
-time python3 pyshell.py python -c \"import sys\;print\(sys.executable\)\"
+time python3 pyshell.py python -c \\"import sys\\;print\\(sys.executable\\)\\"
 ```
 /var/lang/bin/python
 
