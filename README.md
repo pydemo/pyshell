@@ -3,6 +3,21 @@ lambdash using Python
 
 inspired by https://github.com/alestic/lambdash (only local and lambda are in Python)
 
+
+## netstat
+
+python3 pyshell.py /opt/net-tools/4.14.181-108.257.amzn1.x86_64/netstat
+```
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State
+tcp        0      0 localhost:54516         localhost:etlservicemgr ESTABLISHED
+tcp        0    480 localhost:etlservicemgr localhost:54516         ESTABLISHED
+udp        0      0 169.254.79.1:41732      169.254.79:sieve-filter ESTABLISHED
+Active UNIX domain sockets (w/o servers)
+Proto RefCnt Flags       Type       State         I-Node   Path
+```
+
+
 ## python path
 
 time python3 pyshell.py python -c \\"import sys\\;print\\(sys.executable\\)\\"
