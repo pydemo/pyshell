@@ -3,6 +3,43 @@ lambdash using Python
 
 inspired by https://github.com/alestic/lambdash (only local and lambda are in Python)
 
+## ifconfig
+
+```
+alexb@DESKTOP-4K2H1C1:~/mygit/pyshell$ time python3 pyshell.py /opt/net-tools/4.14.181-108.257.amzn1.x86_64/ifconfig
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536  metric 1
+        inet 127.0.0.1  netmask 255.0.0.0
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 91  bytes 12819 (12.5 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 91  bytes 12819 (12.5 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+telemetry1_sb: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500  metric 1
+        inet 169.254.79.130  netmask 255.255.255.252  broadcast 0.0.0.0
+        ether 46:9d:7b:26:13:e4  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+vinternal_1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500  metric 1
+        inet 169.254.76.1  netmask 255.255.254.0  broadcast 0.0.0.0
+        ether 22:8e:ab:10:23:69  txqueuelen 1000  (Ethernet)
+        RX packets 5  bytes 414 (414.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 6  bytes 386 (386.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+vtarget_1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500  metric 1
+        inet 169.254.79.1  netmask 255.255.255.255  broadcast 0.0.0.0
+        ether 0e:c5:e3:3e:bc:57  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+```
+
 
 ## netstat
 
