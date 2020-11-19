@@ -3,6 +3,15 @@ lambdash using Python
 
 inspired by https://github.com/alestic/lambdash (only local and lambda are in Python)
 
+##ping
+
+python3 pyshell.py /opt/iputils/4.14.181-108.257.amzn1.x86_64/ping/ping google.com
+```
+################################################################################
+/opt/iputils/4.14.181-108.257.amzn1.x86_64/ping/ping: cap_set_proc: Operation not permitted
+################################################################################
+FAILURE (255)
+```
 
 ## SSH port
 ```
