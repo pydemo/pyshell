@@ -3,6 +3,14 @@ lambdash using Python
 
 inspired by https://github.com/alestic/lambdash (only local and lambda are in Python)
 
+
+## SSH port
+```
+ sudo netstat -tnlp | grep :22
+```
+
+
+
 ## ifconfig
 
 python3 pyshell.py /opt/net-tools/4.14.181-108.257.amzn1.x86_64/ifconfig
