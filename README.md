@@ -5,8 +5,8 @@ inspired by https://github.com/alestic/lambdash (only local and lambda are in Py
 
 ## ifconfig
 
+python3 pyshell.py /opt/net-tools/4.14.181-108.257.amzn1.x86_64/ifconfig
 ```
-alexb@DESKTOP-4K2H1C1:~/mygit/pyshell$ time python3 pyshell.py /opt/net-tools/4.14.181-108.257.amzn1.x86_64/ifconfig
 lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536  metric 1
         inet 127.0.0.1  netmask 255.0.0.0
         loop  txqueuelen 1000  (Local Loopback)
