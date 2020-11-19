@@ -3,7 +3,19 @@ lambdash using Python
 
 inspired by https://github.com/alestic/lambdash (only local and lambda are in Python)
 
-##ping
+
+## setcap
+
+python3 pyshell.py /opt/iputils/4.14.181-108.257.amzn1.x86_64/tools/setcap  'cap_net_admin,cap_net_raw+ep' /opt/iputils/4.14.181-108.257.am
+zn1.x86_64/ping/ping
+```
+################################################################################
+unable to set CAP_SETFCAP effective capability: Operation not permitted
+################################################################################
+FAILURE (1)
+```
+
+## ping
 
 python3 pyshell.py /opt/iputils/4.14.181-108.257.amzn1.x86_64/ping/ping google.com
 ```
