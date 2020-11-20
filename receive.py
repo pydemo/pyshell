@@ -11,9 +11,17 @@ try:
     import cStringIO
 except ImportError:
     import io as cStringIO
+
+import click
+click.disable_unicode_literals_warning = True
+
+
+
+@click.command()
+@click.option('-h', 	'--host',  default = socket.gethostname(), type=str, help = 'Host name.',   required=True )
+@click.option('-p', 	'--port',  default = 12345, type=int, help = 'Port number.', required=True )
     
-    
-def netcat_read_messages(**kargs):
+def main(**kargs):
     host, port = kargs['host'], kargs['port']
     #s = socket.socket()         # Create a socket object
     timed_out=True
@@ -84,4 +92,4 @@ def netcat_read_messages(**kargs):
     
 
 if __name__ == '__main__':
-    netcat_read_messages(host=socket.gethostname(), port=12348)
+    main()
