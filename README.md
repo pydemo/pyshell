@@ -2,6 +2,30 @@
 lambdash using Python
 
 inspired by https://github.com/alestic/lambdash (only local and lambda are in Python)
+## ncat lambda->EC2
+
+### Find EC2 IP
+[ec2-user@ip-172-31-41-217 ~]$ python -c "import requests; print(requests.get('http://checkip.amazonaws.com').text.rstrip())"
+```
+3.136.154.28
+```
+
+### EC2: 
+```[ec2-user@ip-172-31-41-217 ~]$ nc -vv -k -l 22000```
+### Lambda: 
+~/mygit/pyshell$ time python3 pyshell.py echo -n \"test\"\|/opt/nmap/4.14.181-108.257.amzn1.x86_64/bin/ncat 3.136.154.28 22000
+```
+real    0m0.543s
+user    0m0.135s
+sys     0m0.010s
+```
+### EC2:
+```
+Connection from 18.191.97.37 port 22000 [tcp/snapenetio] accepted
+test
+```
+
+time python3 pyshell.py echo -n \"test
 
 
 ## setcap
