@@ -95,7 +95,7 @@ user    0m0.131s
 sys     0m0.010s
 ```
 
-## env
+## env (in ur dreamz :-)
 python3 pyshell.py env
 ```
 AWS_LAMBDA_FUNCTION_VERSION=$LATEST
