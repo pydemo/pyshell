@@ -16,7 +16,7 @@ s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 s.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
 #s.setsockopt(socket.IPPROTO_TCP, socket.TCP_CORK, 1)
 
-host = '172.31.41.217' 
+host = '10.0.0.65' 
 port = 12348           # Reserve a port for your service.
 s.connect((host, port))
 #f = open('/dump2/oats/101316/rawdata/pr1lsmars11.20161013.TransOrd.dat.gz') 
