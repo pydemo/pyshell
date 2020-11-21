@@ -19,7 +19,19 @@ PORT    STATE SERVICE
 
 Nmap done: 1 IP address (1 host up) scanned in 5.94 seconds
 ```
+amazon.com:
 
+```
+Starting Nmap 7.91 ( https://nmap.org ) at 2020-11-21 15:08 UTC
+Nmap scan report for amazon.com (176.32.103.205)
+Host is up (0.018s latency).
+Other addresses for amazon.com (not scanned): 205.251.242.103 176.32.98.166
+Not shown: 997 closed ports
+PORT    STATE    SERVICE
+25/tcp  filtered smtp
+80/tcp  open     http
+443/tcp open     https
+```
 ## ncat lambda->EC2
 
    ### Find EC2 IP
