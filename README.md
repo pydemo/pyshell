@@ -3,6 +3,16 @@ lambdash using Python
 
 inspired by https://github.com/alestic/lambdash (only local and lambda are in Python)
 
+## sqlite inmemory
+
+`python3 pyshell.py /opt/sqlite/4.14.181-108.257.amzn1.x86_64/bin/sqlite3 \'\' \'ATTACH DATABASE \'\:memory\' AS mem_example\' \'.database\'`
+
+```
+main:
+mem_example:
+```
+
+
 ## sqlite3 
 ```shell
 python3 pyshell.py echo -e \'col_text,col_int\' \> /tmp/sample.csv
