@@ -10,7 +10,8 @@ inspired by https://github.com/alestic/lambdash (only local and lambda are in Py
 ```
 main:
 mem_example:
-
+```
+Create test csv
 ```shell
 python3 pyshell.py echo -e \'col_text,col_int\' \> /tmp/sample.csv
 python3 pyshell.py echo -e \'apples,3\' \>\> /tmp/sample.csv
