@@ -24,6 +24,7 @@ apples,3
 oranges,5
 ```
 
+Load csv to memory.
 
 ` python3 pyshell.py /opt/sqlite/4.14.181-108.257.amzn1.x86_64/bin/sqlite3 \'\' \'ATTACH DATABASE \'\:memory\' AS mem_example\' \'.mode csv\'
  \'.import /tmp/sample.csv test\' \'select \* from test\'`
