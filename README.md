@@ -16,7 +16,9 @@ apples,3
 oranges,5
 ```
 python3 pyshell.py /opt/sqlite/4.14.181-108.257.amzn1.x86_64/bin/sqlite3 --version
-`3.33.0 2020-08-14 13:23:32 fca8dc8b578f215a969cd899336378966156154710873e68b3d9ac5881b0ff3f`
+```
+3.33.0 2020-08-14 13:23:32 fca8dc8b578f215a969cd899336378966156154710873e68b3d9ac5881b0ff3f
+```
 
 python3 pyshell.py /opt/sqlite/4.14.181-108.257.amzn1.x86_64/bin/sqlite3 /tmp/mydb.db \'.mode csv\' \'.import /tmp/sample.csv test\' \'select \* from test\'
 ```
