@@ -2,30 +2,48 @@
 lambdash using Python
 
 inspired by https://github.com/alestic/lambdash (only local and lambda are in Python)
+
+## nmap
+python3 pyshell.py echo -n "test"|/opt/nmap/4.14.181-108.257.amzn1.x86_64/bin/nmap google.com
+```
+time python3 pyshell.py /opt/nmap/4.14.181-108.257.amzn1.x86_64/bin/nmap google.com
+Starting Nmap 7.91 ( https://nmap.org ) at 2020-11-21 15:05 UTC
+Nmap scan report for google.com (172.217.4.110)
+Host is up (0.019s latency).
+Other addresses for google.com (not scanned): 2607:f8b0:4009:802::200e
+rDNS record for 172.217.4.110: ord36s04-in-f110.1e100.net
+Not shown: 998 filtered ports
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 5.94 seconds
+```
+
 ## ncat lambda->EC2
 
-### Find EC2 IP
-[ec2-user@ip-172-31-41-217 ~]$ python -c "import requests; print(requests.get('http://checkip.amazonaws.com').text.rstrip())"
-```
-3.136.154.28
-```
+   ### Find EC2 IP
+   [ec2-user@ip-172-31-41-217 ~]$ python -c "import requests; print(requests.get('http://checkip.amazonaws.com').text.rstrip())"
+   ```
+   3.136.154.28
+   ```
 
-### EC2: 
-```[ec2-user@ip-172-31-41-217 ~]$ nc -vv -k -l 22000```
-### Lambda: 
-~/mygit/pyshell$ time python3 pyshell.py echo -n \"test\"\|/opt/nmap/4.14.181-108.257.amzn1.x86_64/bin/ncat 3.136.154.28 22000
-```
-real    0m0.543s
-user    0m0.135s
-sys     0m0.010s
-```
-### EC2:
-```
-Connection from 18.191.97.37 port 22000 [tcp/snapenetio] accepted
-test
-```
+   ### EC2: 
+   ```[ec2-user@ip-172-31-41-217 ~]$ nc -vv -k -l 22000```
+   ### Lambda: 
+   ~/mygit/pyshell$ time python3 pyshell.py echo -n \"test\"\|/opt/nmap/4.14.181-108.257.amzn1.x86_64/bin/ncat 3.136.154.28 22000
+   ```
+   real    0m0.543s
+   user    0m0.135s
+   sys     0m0.010s
+   ```
+   ### EC2:
+   ```
+   Connection from 18.191.97.37 port 22000 [tcp/snapenetio] accepted
+   test
+   ```
 
-time python3 pyshell.py echo -n \"test
+
 
 
 ## setcap
