@@ -4,6 +4,15 @@ lambdash using Python
 inspired by https://github.com/alestic/lambdash (only local and lambda are in Python)
 
 ## nmap
+
+UDP ports scan: `sudo ./nmap -sU 19.171.43.16`
+```
+Starting Nmap 7.91 ( https://nmap.org ) at 2020-11-21 15:18 UTC
+Nmap scan report for ec2-18-191-63-76.us-east-2.compute.amazonaws.com (18.191.63.76)
+Host is up (0.0016s latency).
+All 1000 scanned ports on ec2-18-191-63-76.us-east-2.compute.amazonaws.com (18.191.63.76) are open|filtered
+```
+
 python3 pyshell.py echo -n "test"|/opt/nmap/4.14.181-108.257.amzn1.x86_64/bin/nmap google.com
 ```
 time python3 pyshell.py /opt/nmap/4.14.181-108.257.amzn1.x86_64/bin/nmap google.com
