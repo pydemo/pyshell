@@ -3,6 +3,26 @@ lambdash using Python
 
 inspired by https://github.com/alestic/lambdash (only local and lambda are in Python)
 
+## sqlite3 
+```shell
+python3 pyshell.py echo -e \'col_text,col_int\' \> /tmp/sample.csv
+python3 pyshell.py echo -e \'apples,3\' \>\> /tmp/sample.csv
+python3 pyshell.py echo -e \'oranges,5\' \>\> /tmp/sample.csv
+python3 pyshell.py cat /tmp/sample.csv
+```
+```
+col_text,col_int
+apples,3
+oranges,5
+```
+python3 pyshell.py /opt/sqlite/4.14.181-108.257.amzn1.x86_64/bin/sqlite3 --version
+`3.33.0 2020-08-14 13:23:32 fca8dc8b578f215a969cd899336378966156154710873e68b3d9ac5881b0ff3f`
+
+python3 pyshell.py /opt/sqlite/4.14.181-108.257.amzn1.x86_64/bin/sqlite3 /tmp/mydb.db \'.mode csv\' \'.import /tmp/sample.csv test\' \'select \* from test\'
+```
+apples,3
+oranges,5  
+```  
 ## nmap
 
 UDP ports scan: `sudo ./nmap -sU 19.171.43.16`
