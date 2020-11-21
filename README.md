@@ -10,8 +10,26 @@ inspired by https://github.com/alestic/lambdash (only local and lambda are in Py
 ```
 main:
 mem_example:
+
+```shell
+python3 pyshell.py echo -e \'col_text,col_int\' \> /tmp/sample.csv
+python3 pyshell.py echo -e \'apples,3\' \>\> /tmp/sample.csv
+python3 pyshell.py echo -e \'oranges,5\' \>\> /tmp/sample.csv
+python3 pyshell.py cat /tmp/sample.csv
+```
+```
+col_text,col_int
+apples,3
+oranges,5
 ```
 
+
+` python3 pyshell.py /opt/sqlite/4.14.181-108.257.amzn1.x86_64/bin/sqlite3 \'\' \'ATTACH DATABASE \'\:memory\' AS mem_example\' \'.mode csv\'
+ \'.import /tmp/sample.csv test\' \'select \* from test\'`
+```
+apples,3
+oranges,5
+```
 
 ## sqlite3 
 ```shell
