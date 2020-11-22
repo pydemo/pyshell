@@ -12,7 +12,7 @@ esac; shift; done
 # Create and install requirements to directory.
 for penv in ${pythonEnvs[@]}; do
     mkdir -pv python/lib/${penv}/site-packages
-    docker run -v "$PWD":/var/task "lambci/lambda:build-${penv}" /bin/sh -c "pip install -r requirements.txt -t python/lib/${penv}/site-packages/; exit"
+    sudo docker run -v "$PWD":/var/task "lambci/lambda:build-${penv}" /bin/sh -c "pip install -r requirements.txt -t python/lib/${penv}/site-packages/; exit"
 done
 
 
