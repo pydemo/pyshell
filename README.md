@@ -3,6 +3,15 @@ lambdash using Python
 
 inspired by https://github.com/alestic/lambdash (only local and lambda are in Python)
 
+## apsw
+python3 pyshell.py /opt/python36_apsw/bin/python3 /opt/slite/test.py
+```
+      Using APSW file /opt/python36_apsw/lib64/python3.6/dist-packages/apsw.cpython-36m-x86_64-linux-gnu.so
+         APSW version 3.9.2-r1
+   SQLite lib version 3.9.2
+SQLite header version 3009002
+```
+
 ## sqlite inmemory
 
 `python3 pyshell.py /opt/sqlite/4.14.181-108.257.amzn1.x86_64/bin/sqlite3 \'\' \'ATTACH DATABASE \'\:memory\' AS mem_example\' \'.database\'`
