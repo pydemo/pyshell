@@ -3,6 +3,17 @@ lambdash using Python
 
 inspired by https://github.com/alestic/lambdash (only local and lambda are in Python)
 
+## Python layer import (apsw)
+
+```python3 pyshell.py python3 -c \'import sys\; sys.path.append\(\"/opt/python/lib/python3.7/site-packages\"\)\;import apsw\;print\(apsw.__file__\)\'
+
+    import sys; 
+    sys.path.append('/opt/python/lib/python3.7/site-packages');
+    import apsw
+    print(apsw.__file__)
+
+/opt/python/lib/python3.7/site-packages/apsw.cpython-37m-x86_64-linux-gnu.so
+```
 ## apsw
 python3 pyshell.py /opt/python36_apsw/bin/python3 /opt/slite/test.py
 ```
