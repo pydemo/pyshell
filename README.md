@@ -3,6 +3,26 @@ lambdash using Python
 
 inspired by https://github.com/alestic/lambdash (only local and lambda are in Python)
 
+## pyarrow layer
+`python3 pyshell.py python3 -c \'import sys\; sys.path.append\(\"/opt/python/lib/python3.7/site-packages\"\)\;import pyarrow as _\;print\(_.__file__\)\'`
+
+```
+/opt/python/lib/python3.7/site-packages/pyarrow/__init__.py
+################################################################################
+OpenBLAS WARNING - could not determine the L2 cache size on this system, assuming 256k
+################################################################################
+```
+
+## numpy layer
+
+`python3 pyshell.py python3 -c \'import sys\; sys.path.append\(\"/opt/python/lib/python3.7/site-packages\"\)\;import numpy as _\;print\(_.__file__\)\'`
+```
+/opt/python/lib/python3.7/site-packages/numpy/__init__.py
+################################################################################
+OpenBLAS WARNING - could not determine the L2 cache size on this system, assuming 256k
+################################################################################
+```
+
 ## Python layer import (apsw)
 
 ```python3 pyshell.py python3 -c \'import sys\; sys.path.append\(\"/opt/python/lib/python3.7/site-packages\"\)\;import apsw\;print\(apsw.__file__\)\'
