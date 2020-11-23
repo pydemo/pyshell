@@ -25,7 +25,9 @@ OpenBLAS WARNING - could not determine the L2 cache size on this system, assumin
 
 ## Python layer import (apsw)
 
-```python3 pyshell.py python3 -c \'import sys\; sys.path.append\(\"/opt/python/lib/python3.7/site-packages\"\)\;import apsw\;print\(apsw.__file__\)\'
+`python3 pyshell.py python3 -c \'import sys\; sys.path.append\(\"/opt/python/lib/python3.7/site-packages\"\)\;import apsw\;print\(apsw.__file__\)\'`
+
+```
 
     import sys; 
     sys.path.append('/opt/python/lib/python3.7/site-packages');
