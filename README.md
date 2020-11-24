@@ -146,7 +146,7 @@ PORT    STATE    SERVICE
 ```
 
 
-python3 pyshell.py /opt/netcat/4.14.181-108.257.amzn1.x86_64/bin/netcat -vnz -w 1 172.217.4.110 80-85
+`python3 pyshell.py /opt/netcat/4.14.181-108.257.amzn1.x86_64/bin/netcat -vnz -w 1 172.217.4.110 80-85`
 ```
 ################################################################################
 172.217.4.110 80 (http) open
@@ -157,7 +157,7 @@ python3 pyshell.py /opt/netcat/4.14.181-108.257.amzn1.x86_64/bin/netcat -vnz -w 
 ## ncat lambda->EC2
 
    ### Find EC2 IP
-   [ec2-user@ip-172-31-41-217 ~]$ python -c "import requests; print(requests.get('http://checkip.amazonaws.com').text.rstrip())"
+   `python -c "import requests; print(requests.get('http://checkip.amazonaws.com').text.rstrip())"`
    ```
    3.136.154.28
    ```
@@ -165,7 +165,7 @@ python3 pyshell.py /opt/netcat/4.14.181-108.257.amzn1.x86_64/bin/netcat -vnz -w 
    ### EC2: 
    ```[ec2-user@ip-172-31-41-217 ~]$ nc -vv -k -l 22000```
    ### Lambda: 
-   ~/mygit/pyshell$ time python3 pyshell.py echo -n \"test\"\|/opt/nmap/4.14.181-108.257.amzn1.x86_64/bin/ncat 3.136.154.28 22000
+   `python3 pyshell.py echo -n \"test\"\|/opt/nmap/4.14.181-108.257.amzn1.x86_64/bin/ncat 3.136.154.28 22000`
    ```
    real    0m0.543s
    user    0m0.135s
@@ -182,8 +182,7 @@ python3 pyshell.py /opt/netcat/4.14.181-108.257.amzn1.x86_64/bin/netcat -vnz -w 
 
 ## setcap
 
-python3 pyshell.py /opt/iputils/4.14.181-108.257.amzn1.x86_64/tools/setcap  'cap_net_admin,cap_net_raw+ep' /opt/iputils/4.14.181-108.257.am
-zn1.x86_64/ping/ping
+`python3 pyshell.py /opt/iputils/4.14.181-108.257.amzn1.x86_64/tools/setcap  'cap_net_admin,cap_net_raw+ep' /opt/iputils/4.14.181-108.257.amzn1.x86_64/ping/ping`
 ```
 ################################################################################
 unable to set CAP_SETFCAP effective capability: Operation not permitted
