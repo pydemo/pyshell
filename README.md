@@ -163,7 +163,7 @@ PORT    STATE    SERVICE
    ```
 
    ### EC2: 
-   ```[ec2-user@ip-172-31-41-217 ~]$ nc -vv -k -l 22000```
+   ```[ec2-user@ip-172-31-41-217 ~]$ nc -n -vv -k -l -p  22000```
    ### Lambda: 
    `python3 pyshell.py echo -n \"test\"\|/opt/nmap/4.14.181-108.257.amzn1.x86_64/bin/ncat 3.136.154.28 22000`
    ```
