@@ -2,7 +2,22 @@
 lambdash using Python
 
 inspired by https://github.com/alestic/lambdash (only local and lambda are in Python)
-
+## PySend-layer Test
+sender: `time python3 pySend.py python /opt/python/send.py -h 3.134.98.157 -p 22001`
+```
+Sending..
+'it is a test'
+b'\x80\x03X\r\x00\x00\x00it is a testq\x00.'
+Done Sending
+```
+receiver: `python3 receive.py  -p 22001`
+```
+22001
+Got connection from ('13.59.94.78', 46126)
+Receiving...
+33 it is a test
+444
+```
 ## TCP connect test
 nc -4 -k -l -v localhost 5000&
 ```
