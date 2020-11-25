@@ -10,7 +10,7 @@ Sending..
 b'\x80\x03X\r\x00\x00\x00it is a testq\x00.'
 Done Sending
 ```
-receiver: `python3 receive.py  -p 22001`
+EC2 receiver: `python3 receive.py  -p 22001`
 ```
 22001
 Got connection from ('13.59.94.78', 46126)
