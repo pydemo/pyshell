@@ -3,6 +3,22 @@ lambdash using Python
 
 inspired by https://github.com/alestic/lambdash (only local and lambda are in Python)
 
+## TCP connect test
+nc -4 -k -l -v localhost 5000&
+```
+Ncat: Version 7.50 ( https://nmap.org/ncat )
+Ncat: Listening on 127.0.0.1:5000
+```
+curl localhost:5000
+```
+Ncat: Connection from 127.0.0.1.
+Ncat: Connection from 127.0.0.1:46990.
+GET / HTTP/1.1
+Host: localhost:5000
+User-Agent: curl/7.61.1
+Accept: */*
+```
+
 ## pandas layer 
 `python3 pyshell.py python3 -c \'import sys\; sys.path.append\(\"/opt/python/lib/python3.7/site-packages\"\)\;import pandas as _\;print\(_.__file__\)\'`
 ```
