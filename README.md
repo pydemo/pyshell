@@ -2,6 +2,20 @@
 lambdash using Python
 
 inspired by https://github.com/alestic/lambdash (only local and lambda are in Python)
+
+## websockets-layer test
+Lambda client: `python3 pySend.py python /opt/python/client.py -h ec2-3-134-98-157.us-east-2.compute.amazonaws.com`
+```
+test message
+```
+
+EC2 server: `python3 lambda-layer/wssend-layer/python/server.py'
+```
+test message
+```
+
+
+
 ## PySend-layer Test
 sender: `time python3 pySend.py python /opt/python/send.py -h 3.134.98.157 -p 22001`
 ```
