@@ -3,6 +3,18 @@ lambdash using Python
 
 inspired by https://github.com/alestic/lambdash (only local and lambda are in Python)
 
+## Lambda public IP address.
+`python3 pySend.py python3 -c \"import sys\; sys.path.append\(\'/opt/python/lib/python3.7/si
+te-packages\'\)\;import requests\; print\(requests.get\(\'http\://checkip.amazonaws.com\'\).text.rstrip\(\)\)\"`
+```
+18.224.38.103
+```
+## Lambda hostname
+`python3 pySend.py /opt/net-tools/4.14.181-108.257.amzn1.x86_64/hostname`
+```
+169.254.36.93
+```
+
 ## netstat
 
 `python3 pySend.py /opt/net-tools/4.14.181-108.257.amzn1.x86_64/netstat -i`
