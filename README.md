@@ -3,6 +3,29 @@ lambdash using Python
 
 inspired by https://github.com/alestic/lambdash (only local and lambda are in Python)
 
+## netstat
+
+`python3 pySend.py /opt/net-tools/4.14.181-108.257.amzn1.x86_64/netstat -i`
+```
+Kernel Interface table
+Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+lo    65536 0       141      0      0 0           141      0      0      0 LRU
+telem  1500 0         0      0      0 0             0      0      0      0 BMRU
+vinte  1500 0        11      0      0 0            12      0      0      0 BMRU
+vtarg  1500 0         0      0      0 0             0      0      0      0 BMRU
+```
+`python3 pySend.py /opt/net-tools/4.14.181-108.257.amzn1.x86_64/netstat -na`
+```
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State
+tcp        0      0 127.0.0.1:9001          0.0.0.0:*               LISTEN
+tcp        0      0 127.0.0.1:58018         127.0.0.1:9001          ESTABLISHED
+tcp        0    483 127.0.0.1:9001          127.0.0.1:58018         ESTABLISHED
+udp        0      0 169.254.79.1:46058      169.254.79.2:2000       ESTABLISHED
+Active UNIX domain sockets (servers and established)
+Proto RefCnt Flags       Type       State         I-Node   Path
+```
+
 ## websockets-layer test
 Lambda client: `python3 pySend.py python /opt/python/client.py -h ec2-3-134-98-157.us-east-2.compute.amazonaws.com`
 ```
