@@ -3,8 +3,8 @@ You can use netcat or ncat (from nmap)
 
 First, you need to create layer and attach it to your lambda function.
 Layers to use:
-        1. nmap (contains ncat): https://github.com/pydemo/pyshell/blob/main/lambda-layer/nmap.zip
-        2. netcat: https://github.com/pydemo/pyshell/blob/main/lambda-layer/netcat.zip
+        1.nmap (contains ncat): https://github.com/pydemo/pyshell/blob/main/lambda-layer/nmap.zip
+        2.netcat: https://github.com/pydemo/pyshell/blob/main/lambda-layer/netcat.zip
     
 
 
