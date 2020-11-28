@@ -5,6 +5,7 @@ First, you need to create layer and attach it to your lambda function.
 
 ### Layers to use:
         nmap (contains ncat): https://github.com/pydemo/pyshell/blob/main/lambda-layer/nmap.zip
+        or
         netcat: https://github.com/pydemo/pyshell/blob/main/lambda-layer/netcat.zip
     
 
