@@ -29,7 +29,7 @@ Using pyshell call netcat in shell.
 
 
 ### EC2
-Back to EC@, you'll see message in netcat.
+Back to EC2, you'll see message in netcat.
 ```
 Connection from 18.191.97.37 port 22000 [tcp/snapenetio] accepted
 message from Lambda
