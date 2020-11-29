@@ -13,12 +13,14 @@ Running Node.js v15.3.0
 ```
 Running Node.js v15.3.0
 ```
-## wscat
-`python3 pyshell.py which wscat`
+## wscat (with layers: bin, node_modules, and wscat)
+`python3 pyNode.py export NODE_PATH=/opt/node_modules\;/opt/wscat-layer/bin/wscat --version`
 ```
-################################################################################
-which: no wscat in (/var/lang/bin:/usr/local/bin:/usr/bin/:/bin:/opt/bin)
-################################################################################
+4.0.1
+```
+`python3 pyNode.py export NODE_PATH=/opt/node_modules\;/opt/wscat-layer/bin/wscat -c ws://echo.websocket.org`
+```
+FAILURE (255)
 ```
 ## Lambda private IP address.
 `python3 pyshell.py python3 -c \"import socket\;print\(socket.gethostbyname\(socket.gethostname\(\)\)\)\"`
