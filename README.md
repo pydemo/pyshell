@@ -2,7 +2,13 @@
 lambdash using Python
 
 inspired by https://github.com/alestic/lambdash (only local and lambda are in Python)
-
+## wscat
+`python3 pyshell.py which wscat`
+```
+################################################################################
+which: no wscat in (/var/lang/bin:/usr/local/bin:/usr/bin/:/bin:/opt/bin)
+################################################################################
+```
 ## Lambda private IP address.
 `python3 pyshell.py python3 -c \"import socket\;print\(socket.gethostbyname\(socket.gethostname\(\)\)\)\"`
 ```
