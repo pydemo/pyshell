@@ -3,21 +3,32 @@ lambdash using Python
 
 inspired by https://github.com/alestic/lambdash (only local and lambda are in Python)
 
+## Lambda private IP address.
+`python3 pyshell.py python3 -c \"import socket\;print\(socket.gethostbyname\(socket.gethostname\(\)\)\)\"`
+```
+169.254.222.85
+```
+
+
+time python3 pyshell.py python3 -c \"import socket\;print\(socket.gethostbyname\(socket.gethostname\(\)\)\)\"
+169.254.222.85
+
+
 ## Lambda public IP address.
-`python3 pySend.py python3 -c \"import sys\; sys.path.append\(\'/opt/python/lib/python3.7/si
+`python3 pyshell.py python3 -c \"import sys\; sys.path.append\(\'/opt/python/lib/python3.7/si
 te-packages\'\)\;import requests\; print\(requests.get\(\'http\://checkip.amazonaws.com\'\).text.rstrip\(\)\)\"`
 ```
 18.224.38.103
 ```
 ## Lambda hostname
-`python3 pySend.py /opt/net-tools/4.14.181-108.257.amzn1.x86_64/hostname`
+`python3 pyshell.py /opt/net-tools/4.14.181-108.257.amzn1.x86_64/hostname`
 ```
 169.254.36.93
 ```
 
 ## netstat
 
-`python3 pySend.py /opt/net-tools/4.14.181-108.257.amzn1.x86_64/netstat -i`
+`python3 pyshell.py /opt/net-tools/4.14.181-108.257.amzn1.x86_64/netstat -i`
 ```
 Kernel Interface table
 Iface   MTU Met   RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
@@ -26,7 +37,7 @@ telem  1500 0         0      0      0 0             0      0      0      0 BMRU
 vinte  1500 0        11      0      0 0            12      0      0      0 BMRU
 vtarg  1500 0         0      0      0 0             0      0      0      0 BMRU
 ```
-`python3 pySend.py /opt/net-tools/4.14.181-108.257.amzn1.x86_64/netstat -na`
+`python3 pyshell.py /opt/net-tools/4.14.181-108.257.amzn1.x86_64/netstat -na`
 ```
 Active Internet connections (servers and established)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State
@@ -39,7 +50,7 @@ Proto RefCnt Flags       Type       State         I-Node   Path
 ```
 
 ## websockets-layer test
-Lambda client: `python3 pySend.py python /opt/python/client.py -h ec2-3-134-98-157.us-east-2.compute.amazonaws.com`
+Lambda client: `python3 pyshell.py python /opt/python/client.py -h ec2-3-134-98-157.us-east-2.compute.amazonaws.com`
 ```
 test message
 ```
@@ -52,7 +63,7 @@ test message
 
 
 ## PySend-layer Test
-sender: `time python3 pySend.py python /opt/python/send.py -h 3.134.98.157 -p 22001`
+sender: `time python3 pyshell.py python /opt/python/send.py -h 3.134.98.157 -p 22001`
 ```
 Sending..
 'it is a test'
