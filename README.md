@@ -2,6 +2,14 @@
 lambdash using Python
 
 inspired by https://github.com/alestic/lambdash (only local and lambda are in Python)
+
+## node lambda
+`python3 pyNode.py  /opt/nodejs/bin/node -e \"console.log\(\'Running Node.js \' + process.version\)\"`
+```
+Running Node.js v15.3.0
+```
+
+
 ## wscat
 `python3 pyshell.py which wscat`
 ```
