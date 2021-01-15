@@ -1,0 +1,6 @@
+botocore==1.19.37
+boto3==1.16.17
+click==7.0
+zeep==4.0.0
+cli_helpers==2.1.0
+unicodecsv==0.14.1

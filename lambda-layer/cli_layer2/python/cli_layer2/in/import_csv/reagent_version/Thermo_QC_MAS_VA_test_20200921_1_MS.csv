@@ -1,0 +1,2 @@
+QC_Vendor,WCONTROLLOTNUMBER,QC_Expiration,Assay Type,Assay,Body Fluid,Level,SubLot,VA_Number,VA_Version,Mean_Conc,STDDEV_Conc,Gen_Intro,Gen_Expiry,Lower_Limit,Upper_Limit,'EXTRAFIELDS',Conc. Conv. Unit,XT
+MAS,OCR20061A,9/21/2021 16:49,MS,LAC,Plasma,1,32,1,1,1.117042857,0.012166666,9/21/2020 16:49,3/20/2021 16:49,0,9999,Extra fields,mmol/L,

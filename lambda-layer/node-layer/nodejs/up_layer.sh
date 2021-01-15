@@ -1,0 +1,1 @@
+aws lambda update-function-configuration --function-name pyNode --layers  arn:aws:lambda:us-east-2:887527146575:layer:node_modules:3 arn:aws:lambda:us-east-2:887527146575:layer:bin:1 arn:aws:lambda:us-east-2:887527146575:layer:wscat:2
