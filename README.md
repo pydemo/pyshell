@@ -1,7 +1,7 @@
 # python lambdash
 lambdash using Python
 
-inspired by https://github.com/alestic/lambdash (only local and lambda are in Python)
+inspired by https://github.com/alestic/lambdash (only local and lambda is in Python)
 
 ## node lambda
 `python3 pyNode.py  /opt/nodejs/bin/node -e \"console.log\(\'Running Node.js \' + process.version\)\"`
